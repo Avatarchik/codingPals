@@ -24,13 +24,13 @@
 		5781AFBC1C601E000080E889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5781AFBA1C601E000080E889 /* Main.storyboard */; };
 		5781AFBE1C601E000080E889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5781AFBD1C601E000080E889 /* Assets.xcassets */; };
 		5781AFC11C601E000080E889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5781AFBF1C601E000080E889 /* LaunchScreen.storyboard */; };
+		57870ECE1C74D18B00F9F55C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57870ECD1C74D18B00F9F55C /* SignUpViewController.swift */; };
 		579C2D761C6EB4FA005E7179 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C2D751C6EB4FA005E7179 /* MapViewController.swift */; };
 		579C2D791C6ECB67005E7179 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C2D781C6ECB67005E7179 /* CustomAnnotation.swift */; };
 		579C2D7B1C6EFC70005E7179 /* MapUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C2D7A1C6EFC70005E7179 /* MapUserDetailViewController.swift */; };
 		57A9357B1C62F7C400794258 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9357A1C62F7C400794258 /* HomeViewController.swift */; };
 		57D822E21C6023A800E9DFB0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 57D822E11C6023A800E9DFB0 /* Podfile */; };
 		57D822E81C6052F900E9DFB0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D822E71C6052F900E9DFB0 /* LogInViewController.swift */; };
-		57D822EA1C605C6400E9DFB0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D822E91C605C6400E9DFB0 /* SignUpViewController.swift */; };
 		5DBAE062F6EEF2B388BFA296 /* Pods_tinderClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75903D2F7FEFA2E1044FA574 /* Pods_tinderClone.framework */; };
 		B00DDCCACBEF51A85EBC159F /* Pods_codingPals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57309683C4D36F5522C031B4 /* Pods_codingPals.framework */; };
 /* End PBXBuildFile section */
@@ -57,14 +57,14 @@
 		5781AFBD1C601E000080E889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5781AFC01C601E000080E889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5781AFC21C601E000080E889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57870ECD1C74D18B00F9F55C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		57870ED61C74D33600F9F55C /* codingPals-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "codingPals-Bridging-Header.h"; sourceTree = "<group>"; };
 		579C2D751C6EB4FA005E7179 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		579C2D781C6ECB67005E7179 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		579C2D7A1C6EFC70005E7179 /* MapUserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapUserDetailViewController.swift; sourceTree = "<group>"; };
 		57A9357A1C62F7C400794258 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		57D822E11C6023A800E9DFB0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		57D822E31C603AAF00E9DFB0 /* tinderClone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tinderClone-Bridging-Header.h"; sourceTree = "<group>"; };
 		57D822E71C6052F900E9DFB0 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		57D822E91C605C6400E9DFB0 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		75903D2F7FEFA2E1044FA574 /* Pods_tinderClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tinderClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		866ECA307F413805FBD8523B /* Pods-tinderClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinderClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tinderClone/Pods-tinderClone.debug.xcconfig"; sourceTree = "<group>"; };
 		EBA4F3A2E9E2F0AB29B761B2 /* Pods-tinderClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinderClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-tinderClone/Pods-tinderClone.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,12 +157,12 @@
 		5781AFAA1C601E000080E889 = {
 			isa = PBXGroup;
 			children = (
+				57870ED61C74D33600F9F55C /* codingPals-Bridging-Header.h */,
 				57D822E11C6023A800E9DFB0 /* Podfile */,
 				5781AFB51C601E000080E889 /* tinderClone */,
 				5781AFB41C601E000080E889 /* Products */,
 				9BE36E0E0327087B88BF121B /* Pods */,
 				049FBFA62CC1C4DCA9359739 /* Frameworks */,
-				57D822E31C603AAF00E9DFB0 /* tinderClone-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,7 +214,7 @@
 			children = (
 				5781AFB81C601E000080E889 /* LogInAndSignUpViewController.swift */,
 				57D822E71C6052F900E9DFB0 /* LogInViewController.swift */,
-				57D822E91C605C6400E9DFB0 /* SignUpViewController.swift */,
+				57870ECD1C74D18B00F9F55C /* SignUpViewController.swift */,
 			);
 			name = "LogIn & SignUp";
 			sourceTree = "<group>";
@@ -382,8 +382,8 @@
 				5705573A1C6FE4C2004AC7F0 /* DelegateProtocol.swift in Sources */,
 				572921C61C6D3EC600CD6C88 /* ContactsTableViewCell.swift in Sources */,
 				5781AFB71C601E000080E889 /* AppDelegate.swift in Sources */,
-				57D822EA1C605C6400E9DFB0 /* SignUpViewController.swift in Sources */,
 				579C2D7B1C6EFC70005E7179 /* MapUserDetailViewController.swift in Sources */,
+				57870ECE1C74D18B00F9F55C /* SignUpViewController.swift in Sources */,
 				579C2D761C6EB4FA005E7179 /* MapViewController.swift in Sources */,
 				570557341C6FA3B8004AC7F0 /* FriendRequestStatus.swift in Sources */,
 				572921CB1C6D6D5E00CD6C88 /* ProfileViewController.swift in Sources */,
@@ -515,10 +515,10 @@
 				);
 				INFOPLIST_FILE = codingPals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Chenglu.tinderClone;
+				PRODUCT_BUNDLE_IDENTIFIER = Chenglu.codingPals;
 				PRODUCT_NAME = codingPals;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "tinderClone-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "codingPals-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -537,10 +537,10 @@
 				);
 				INFOPLIST_FILE = codingPals/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Chenglu.tinderClone;
+				PRODUCT_BUNDLE_IDENTIFIER = Chenglu.codingPals;
 				PRODUCT_NAME = codingPals;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "tinderClone-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "codingPals-Bridging-Header.h";
 			};
 			name = Release;
 		};

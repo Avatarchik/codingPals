@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3351E981E6A6BD4D1D5B321B86D22EEBC45F8F95",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7CCE44E6349628E4CE2E547714BA4DC04C91D85C" : 0,
+    "3351E981E6A6BD4D1D5B321B86D22EEBC45F8F95" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E46D0DF6-EB2D-41FA-B79D-A65F18A038C0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7CCE44E6349628E4CE2E547714BA4DC04C91D85C" : "",
+    "3351E981E6A6BD4D1D5B321B86D22EEBC45F8F95" : "tinderClone\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "codingPals",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "codingPals.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lichenglu\/codingPals.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3351E981E6A6BD4D1D5B321B86D22EEBC45F8F95"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lichenglu\/codingPals.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7CCE44E6349628E4CE2E547714BA4DC04C91D85C"
+    }
+  ]
+}
