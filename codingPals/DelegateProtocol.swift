@@ -12,3 +12,15 @@ protocol ContactsTableDelegate {
     
     func stopTimer(controller:ContactsTableViewController, timerToStop1: NSTimer, timerToStop2: NSTimer?)
 }
+
+
+protocol ProfileSexViewDelegate {
+    
+    func didTapOnASexOption(controller:UITableViewController, cellOption: String)
+}
+
+
+protocol ProfileLanguageViewDelegate {
+    
+    func didTapOnALanguageOption(controller:UITableViewController, cellOptions: [String])
+}

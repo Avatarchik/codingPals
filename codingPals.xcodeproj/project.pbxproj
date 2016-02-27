@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57023CF01C7F81A3007A3E0C /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57023CEF1C7F81A3007A3E0C /* ProfileTableViewController.swift */; };
+		57023CF21C7FA002007A3E0C /* ProfileSexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57023CF11C7FA002007A3E0C /* ProfileSexTableViewController.swift */; };
+		57023CF41C7FAAB8007A3E0C /* LanguagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57023CF31C7FAAB8007A3E0C /* LanguagesTableViewController.swift */; };
+		57023CF61C7FAD81007A3E0C /* ProgrammingLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57023CF51C7FAD81007A3E0C /* ProgrammingLanguages.swift */; };
+		57023CF81C7FDFE6007A3E0C /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57023CF71C7FDFE6007A3E0C /* LanguageCell.swift */; };
 		570557121C6F9518004AC7F0 /* ButtonBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570557111C6F9518004AC7F0 /* ButtonBadge.swift */; };
 		570557341C6FA3B8004AC7F0 /* FriendRequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570557331C6FA3B8004AC7F0 /* FriendRequestStatus.swift */; };
 		570557361C6FC6BF004AC7F0 /* NewFriendRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570557351C6FC6BF004AC7F0 /* NewFriendRequestController.swift */; };
@@ -17,7 +22,6 @@
 		572921B91C6CFBF000CD6C88 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572921B81C6CFBF000CD6C88 /* Camera.swift */; };
 		572921C31C6D137C00CD6C88 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572921C21C6D137C00CD6C88 /* ContactsTableViewController.swift */; };
 		572921C61C6D3EC600CD6C88 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572921C51C6D3EC600CD6C88 /* ContactsTableViewCell.swift */; };
-		572921CB1C6D6D5E00CD6C88 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572921CA1C6D6D5E00CD6C88 /* ProfileViewController.swift */; };
 		572921CD1C6D750E00CD6C88 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572921CC1C6D750E00CD6C88 /* CheckBox.swift */; };
 		5781AFB71C601E000080E889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781AFB61C601E000080E889 /* AppDelegate.swift */; };
 		5781AFB91C601E000080E889 /* LogInAndSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781AFB81C601E000080E889 /* LogInAndSignUpViewController.swift */; };
@@ -37,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		51D7DE5CF25BBE292F51AB1D /* Pods-codingPals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codingPals.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codingPals/Pods-codingPals.debug.xcconfig"; sourceTree = "<group>"; };
+		57023CEF1C7F81A3007A3E0C /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		57023CF11C7FA002007A3E0C /* ProfileSexTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSexTableViewController.swift; sourceTree = "<group>"; };
+		57023CF31C7FAAB8007A3E0C /* LanguagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesTableViewController.swift; sourceTree = "<group>"; };
+		57023CF51C7FAD81007A3E0C /* ProgrammingLanguages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguages.swift; sourceTree = "<group>"; };
+		57023CF71C7FDFE6007A3E0C /* LanguageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
 		570557111C6F9518004AC7F0 /* ButtonBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBadge.swift; sourceTree = "<group>"; };
 		570557331C6FA3B8004AC7F0 /* FriendRequestStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRequestStatus.swift; sourceTree = "<group>"; };
 		570557351C6FC6BF004AC7F0 /* NewFriendRequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFriendRequestController.swift; sourceTree = "<group>"; };
@@ -47,7 +56,6 @@
 		572921B81C6CFBF000CD6C88 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		572921C21C6D137C00CD6C88 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		572921C51C6D3EC600CD6C88 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
-		572921CA1C6D6D5E00CD6C88 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		572921CC1C6D750E00CD6C88 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		57309683C4D36F5522C031B4 /* Pods_codingPals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codingPals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5781AFB31C601E000080E889 /* codingPals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codingPals.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +140,7 @@
 				570557111C6F9518004AC7F0 /* ButtonBadge.swift */,
 				570557331C6FA3B8004AC7F0 /* FriendRequestStatus.swift */,
 				570557391C6FE4C2004AC7F0 /* DelegateProtocol.swift */,
+				57023CF51C7FAD81007A3E0C /* ProgrammingLanguages.swift */,
 			);
 			name = Modals;
 			sourceTree = "<group>";
@@ -149,7 +158,10 @@
 		572921C91C6D6CF900CD6C88 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				572921CA1C6D6D5E00CD6C88 /* ProfileViewController.swift */,
+				57023CEF1C7F81A3007A3E0C /* ProfileTableViewController.swift */,
+				57023CF11C7FA002007A3E0C /* ProfileSexTableViewController.swift */,
+				57023CF31C7FAAB8007A3E0C /* LanguagesTableViewController.swift */,
+				57023CF71C7FDFE6007A3E0C /* LanguageCell.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -384,15 +396,19 @@
 				5781AFB71C601E000080E889 /* AppDelegate.swift in Sources */,
 				579C2D7B1C6EFC70005E7179 /* MapUserDetailViewController.swift in Sources */,
 				57870ECE1C74D18B00F9F55C /* SignUpViewController.swift in Sources */,
+				57023CF41C7FAAB8007A3E0C /* LanguagesTableViewController.swift in Sources */,
 				579C2D761C6EB4FA005E7179 /* MapViewController.swift in Sources */,
 				570557341C6FA3B8004AC7F0 /* FriendRequestStatus.swift in Sources */,
-				572921CB1C6D6D5E00CD6C88 /* ProfileViewController.swift in Sources */,
+				57023CF01C7F81A3007A3E0C /* ProfileTableViewController.swift in Sources */,
+				57023CF21C7FA002007A3E0C /* ProfileSexTableViewController.swift in Sources */,
 				570557361C6FC6BF004AC7F0 /* NewFriendRequestController.swift in Sources */,
+				57023CF61C7FAD81007A3E0C /* ProgrammingLanguages.swift in Sources */,
 				57D822E81C6052F900E9DFB0 /* LogInViewController.swift in Sources */,
 				572921CD1C6D750E00CD6C88 /* CheckBox.swift in Sources */,
 				570557121C6F9518004AC7F0 /* ButtonBadge.swift in Sources */,
 				572921B91C6CFBF000CD6C88 /* Camera.swift in Sources */,
 				572921C31C6D137C00CD6C88 /* ContactsTableViewController.swift in Sources */,
+				57023CF81C7FDFE6007A3E0C /* LanguageCell.swift in Sources */,
 				572921B61C6CFBBD00CD6C88 /* ChatController.swift in Sources */,
 				579C2D791C6ECB67005E7179 /* CustomAnnotation.swift in Sources */,
 			);

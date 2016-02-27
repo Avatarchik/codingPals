@@ -13,37 +13,55 @@ import AVFoundation
 
 class JSQViewController: JSQMessagesViewController,UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    // A dictionary which contains the necessary information of you friend. E.g.
+    // userId, username, profile. This is passed from the contactsTable
     var userInfo = [String:AnyObject]()
+    // The friend who you will be talking with
     var friendId: String = ""
+    // Friend's profile/avatar
     var friendProfile: JSQMessagesAvatarImage!
+    // Your profile
     var myProfile: JSQMessagesAvatarImage!
     
+    // Timer which refresh the message every 5 seconds so that your message will be up to date
     var timer: NSTimer = NSTimer()
+    
+    // Boolean value which decides if a loading method should be processed. This is necessary because
+    // sometimes we might have unstable internet, and the amount of time might exceed the 5 seconds threshold of the timer.
     var isLoading: Bool = false
     
+    // A suspecious useless variable
     var users = [PFUser]()
-    var profileUsers = [PFUser]()
-    var avatars = Dictionary<String, JSQMessagesAvatarImage>()
+    
+    // A default avatar which is initilized in the viewDidLoad
     var blankAvatarImage: JSQMessagesAvatarImage!
     
-    var senderImageUrl: String!
-    var updateMessages = false
-    
+    // Define incomingBubble and outgoingBubble's color. incomingBubble means your friend's bubble. outgoingBubble means your bubble.
     let incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor(red: 10/255, green: 180/255, blue: 230/255, alpha: 1.0))
     let outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.lightGrayColor())
+    
+    // The total messages you and your friend's have
     var messages = [JSQMessage]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // get your friend's id!
         friendId = userInfo["userId"] as! String
+        // Modify the navigation bar's title to your friend's username
         self.navigationItem.title = userInfo["userName"] as! String
         
+        // Soft unwrap user to make sure current user has logged in
         if let user = PFUser.currentUser(){
+            // If current user exists, then use the current user's objectId as the senderId.
+            // senderId is a property stored in the JSQMessagesViewController class. It is used to
+            // decide outgoingBubble and incomingBubble
             self.senderId = user.objectId
+            // set the display name as current user's username
             self.senderDisplayName = user["username"] as! String
         }else{
+            // if not logged in, which we do not hope to happen, but could be the case if internet fails. So we can give an alert to the user
             let alert = UIAlertController(title: "Network Error :(", message: "It seems that you are having a connection issue, please try later", preferredStyle: .ActionSheet)
             
             alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
@@ -51,10 +69,13 @@ class JSQViewController: JSQMessagesViewController,UIActionSheetDelegate, UIImag
             presentViewController(alert, animated: true, completion: nil)
         }
         
+        // Set the default avatar as the profile_blank.jpg
         blankAvatarImage = JSQMessagesAvatarImageFactory.avatarImageWithImage(UIImage(named: "profile_blank.jpg"), diameter: 30)
         
+        // Suspecious extraneous set up
         isLoading = false
         
+        // Get currentUser's profile from Parse
         if let currentUserProfileFile = PFUser.currentUser()!["largeProfile"] as? PFFile{
             currentUserProfileFile.getDataInBackgroundWithBlock({ (data, error) -> Void in
                 self.myProfile = JSQMessagesAvatarImageFactory.avatarImageWithImage(UIImage(data: data!), diameter: 30)
@@ -63,6 +84,7 @@ class JSQViewController: JSQMessagesViewController,UIActionSheetDelegate, UIImag
             self.myProfile = blankAvatarImage
         }
         
+        // Set friend's profile
         if let friendImage = userInfo["profile"] as? UIImage{
             
             friendProfile = JSQMessagesAvatarImageFactory.avatarImageWithImage(friendImage, diameter: 30)
@@ -70,6 +92,7 @@ class JSQViewController: JSQMessagesViewController,UIActionSheetDelegate, UIImag
             friendProfile = blankAvatarImage
         }
         
+        // Run the loadMessages method to load messages
         loadMessages()
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -80,11 +103,12 @@ class JSQViewController: JSQMessagesViewController,UIActionSheetDelegate, UIImag
         // Dispose of any resources that can be recreated.
     }
     
+    // reload collectionView's data if there is any new message
     func reloadMessagesView() {
         self.collectionView?.reloadData()
     }
     
-    
+    // Set up the didFinishPickingMediaWithInfo logic. Do things after picking a photo or video
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
         if let video = info[UIImagePickerControllerMediaURL] as? NSURL {
