@@ -76,13 +76,6 @@ class HomeViewController: UIViewController,PFLogInViewControllerDelegate, PFSign
             performSegueWithIdentifier("needLogin", sender: self)
         }
     }
-
-    @IBAction func logOut(sender: AnyObject) {
-        
-        PFUser.logOut()
-        
-        performSegueWithIdentifier("needLogin", sender: self)
-    }
     
     func updateUserImage() {
         

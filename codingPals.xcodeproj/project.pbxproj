@@ -35,7 +35,6 @@
 		57A9357B1C62F7C400794258 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9357A1C62F7C400794258 /* HomeViewController.swift */; };
 		57D822E21C6023A800E9DFB0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 57D822E11C6023A800E9DFB0 /* Podfile */; };
 		57D822E81C6052F900E9DFB0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D822E71C6052F900E9DFB0 /* LogInViewController.swift */; };
-		5DBAE062F6EEF2B388BFA296 /* Pods_tinderClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75903D2F7FEFA2E1044FA574 /* Pods_tinderClone.framework */; };
 		B00DDCCACBEF51A85EBC159F /* Pods_codingPals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57309683C4D36F5522C031B4 /* Pods_codingPals.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57113ACD1C6E435C00D4271E /* HockeySDK.framework in Frameworks */,
-				5DBAE062F6EEF2B388BFA296 /* Pods_tinderClone.framework in Frameworks */,
 				B00DDCCACBEF51A85EBC159F /* Pods_codingPals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -72,6 +72,12 @@ class ProfileTableViewController: UITableViewController, UIImagePickerController
         print("submit")
     }
     
+    @IBAction func didTapLogOutButton(sender: UIButton) {
+        
+        PFUser.logOut()
+        
+        performSegueWithIdentifier("needLogin", sender: self)
+    }
     // MARK: - Delegate Methods
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         

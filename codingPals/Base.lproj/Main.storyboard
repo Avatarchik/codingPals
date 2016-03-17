@@ -16,11 +16,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_bg" translatesAutoresizingMaskIntoConstraints="NO" id="3O1-sb-iVQ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -162,18 +162,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home-Filled.png" id="YIr-dm-hvt"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="CodingPals" id="gLp-fd-t28">
-                        <barButtonItem key="leftBarButtonItem" title="Log out" id="7uz-KW-thC">
-                            <connections>
-                                <action selector="logOut:" destination="Sfc-2w-WNA" id="grp-r9-Dez"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="CodingPals" id="gLp-fd-t28"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="hintLabel" destination="I9w-Jo-XeV" id="lhq-AU-ejW"/>
                         <outlet property="profileImage" destination="GWv-hT-zMA" id="LQF-GR-hbB"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="needLogin" id="fbg-Ew-nH6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hv-ds-jzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -507,10 +500,10 @@
                             <tableViewSection id="DOo-GZ-uYO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dS5-6z-03Z">
-                                        <rect key="frame" x="0.0" y="507" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="506.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dS5-6z-03Z" id="B7z-PG-YEq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KH-SK-myR">
@@ -533,6 +526,33 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BnT-hc-FtC">
+                                        <rect key="frame" x="0.0" y="550.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BnT-hc-FtC" id="VbK-kr-cKY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lip-Ia-Qi9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <color key="backgroundColor" red="0.84427752280000001" green="0.27470080763885074" blue="0.29928621681219864" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <state key="normal" title="Log Out">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="didTapLogOutButton:" destination="eWf-jj-P9K" eventType="touchUpInside" id="rfV-OR-6Uk"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lip-Ia-Qi9" firstAttribute="centerY" secondItem="VbK-kr-cKY" secondAttribute="centerY" id="4Sc-19-7gu"/>
+                                                <constraint firstAttribute="trailing" secondItem="lip-Ia-Qi9" secondAttribute="trailing" id="8C2-VI-92G"/>
+                                                <constraint firstItem="lip-Ia-Qi9" firstAttribute="leading" secondItem="VbK-kr-cKY" secondAttribute="leading" id="fG2-4N-ltZ"/>
+                                                <constraint firstItem="lip-Ia-Qi9" firstAttribute="top" secondItem="VbK-kr-cKY" secondAttribute="top" id="nOO-Ag-RdK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -549,6 +569,7 @@
                         <outlet property="nameTextField" destination="aV5-C1-qye" id="xqJ-Pn-jbb"/>
                         <outlet property="profileImageView" destination="0wJ-vf-gQu" id="jc0-Q8-TxG"/>
                         <outlet property="sexTextLabel" destination="qIl-kS-MTi" id="CPu-UF-e5A"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="needLogin" id="2Dl-e4-sAT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yor-Ah-V96" userLabel="First Responder" sceneMemberID="firstResponder"/>
