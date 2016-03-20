@@ -10,6 +10,7 @@ Short introduction: CodingPals is a location && interest based app for beginning
 
 Right now the app has integrated left/right swipe logic for connection, Chatting interface and coders map feature.
 
+![Login & Home](https://drive.google.com/open?id=0B_R0MuIAyrk-b1NpOHU3dWxzYzA)
 ###To be done
 
 Home: 1. Side bar menu for filtering feeding friends 2. Prettify UI
